@@ -2,7 +2,7 @@
 <body>
 	<a href="mailto:es.lim@konai.com?subject=thisissubject&body=thisisbodycontents" style="font-size:40px;">메일 공유</a>
 	<script>
-		window.alert('Chromium 기반 브라우저 여부: ' + !!window.chrome)
+		window.alert('Chromium 기반 브라우저 여부: ' + !!navigator.userAgentData && navigator.userAgentData.brands.some(data => data.brand == 'Chromium'))
 	</script>
 </body>
 </html>
